@@ -1,5 +1,6 @@
 // app/ressources/faq/page.tsx
-import { HelpCircle, ChevronDown } from 'lucide-react';
+import { HelpCircle } from 'lucide-react';
+import Link from 'next/link';
 import {
   Accordion,
   AccordionContent,
@@ -173,18 +174,18 @@ export default function FAQPage() {
             Consultez nos articles détaillés ou posez-nous directement votre question
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            
+            <Link
               href="/articles"
               className="bg-slate-900 text-white px-8 py-4 rounded-lg font-semibold hover:bg-slate-800 transition-all shadow-lg inline-flex items-center justify-center gap-2"
             >
               Parcourir les articles
-            </a>
-            
+            </Link>
+            <Link
               href="/contact"
               className="bg-white text-slate-900 px-8 py-4 rounded-lg font-semibold hover:bg-slate-50 transition-all border-2 border-slate-200 inline-flex items-center justify-center gap-2"
             >
               Nous contacter
-            </a>
+            </Link>
           </div>
         </div>
       </section>

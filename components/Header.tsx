@@ -2,7 +2,7 @@
 'use client';
 
 import Link from 'next/link';
-import { Moon, Menu, X, ChevronDown, Gift, Calculator, HelpCircle } from 'lucide-react';
+import { Moon, Menu, X, ChevronDown, Gift, Calculator, HelpCircle, FileQuestion } from 'lucide-react';
 import { useState } from 'react';
 
 export default function Header() {
@@ -82,6 +82,18 @@ export default function Header() {
                     <div>
                       <div className="font-semibold text-slate-900">Calculateur</div>
                       <div className="text-xs text-slate-600">Cycles de sommeil</div>
+                    </div>
+                  </Link>
+                  <Link
+                    href="/ressources/faq"
+                    className="flex items-center gap-3 px-4 py-3 hover:bg-slate-50 transition-colors"
+                  >
+                    <div className="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center">
+                      <FileQuestion className="h-5 w-5 text-slate-700" />
+                    </div>
+                    <div>
+                      <div className="font-semibold text-slate-900">FAQ</div>
+                      <div className="text-xs text-slate-600">Questions fréquentes</div>
                     </div>
                   </Link>
                 </div>
@@ -170,6 +182,14 @@ export default function Header() {
                   >
                     <Calculator className="h-4 w-4" />
                     Calculateur
+                  </Link>
+                  <Link
+                    href="/ressources/faq"
+                    className="flex items-center gap-2 text-slate-700 hover:text-slate-900"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    <FileQuestion className="h-4 w-4" />
+                    FAQ
                   </Link>
                 </div>
               </div>

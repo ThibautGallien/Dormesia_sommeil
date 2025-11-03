@@ -1,6 +1,20 @@
 // app/ressources/calculateur/page.tsx
 import { Calculator } from 'lucide-react';
-import SleepCalculator from '@/components/SleepCalculator';
+import dynamic from 'next/dynamic';
+
+// Import dynamique du composant client
+const SleepCalculator = dynamic(() => import('@/components/SleepCalculator'), {
+  ssr: false,
+  loading: () => (
+    <div className="bg-white rounded-2xl shadow-xl p-8 max-w-2xl mx-auto">
+      <div className="animate-pulse space-y-4">
+        <div className="h-16 bg-slate-200 rounded-xl"></div>
+        <div className="h-32 bg-slate-200 rounded-xl"></div>
+        <div className="h-12 bg-slate-200 rounded-xl"></div>
+      </div>
+    </div>
+  )
+});
 
 export const metadata = {
   title: 'Calculateur de Cycles de Sommeil | Dormesia',

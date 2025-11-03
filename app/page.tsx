@@ -3,7 +3,25 @@ import Link from 'next/link';
 import { Moon, Brain, Heart, Sparkles, Clock, BookOpen, Gift, TrendingUp, Users } from 'lucide-react';
 import ArticleCard from '@/components/ArticleCard';
 import { articles } from '@/lib/articles';
-import SleepQuiz from '@/components/SleepQuiz';
+import dynamic from 'next/dynamic';
+
+// Import dynamique du composant client
+const SleepQuiz = dynamic(() => import('@/components/SleepQuiz'), {
+  ssr: false,
+  loading: () => (
+    <div className="bg-white rounded-2xl shadow-xl p-8 max-w-2xl mx-auto">
+      <div className="animate-pulse space-y-4">
+        <div className="h-4 bg-slate-200 rounded w-1/2 mx-auto"></div>
+        <div className="h-8 bg-slate-200 rounded"></div>
+        <div className="space-y-2">
+          <div className="h-16 bg-slate-200 rounded-xl"></div>
+          <div className="h-16 bg-slate-200 rounded-xl"></div>
+          <div className="h-16 bg-slate-200 rounded-xl"></div>
+        </div>
+      </div>
+    </div>
+  )
+});
 
 export default function Home() {
   const featuredArticles = articles.slice(0, 3);
