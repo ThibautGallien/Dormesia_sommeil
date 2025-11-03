@@ -1,55 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://dormesia.fr</loc>
+    <loc>https://dormesia.com</loc>
     <lastmod>2025-11-03T13:27:03.094Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>https://dormesia.fr/articles</loc>
+    <loc>https://dormesia.com/articles</loc>
     <lastmod>2025-11-03T13:27:03.094Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://dormesia.fr/ressources/guide-gratuit</loc>
+    <loc>https://dormesia.com/ressources/guide-gratuit</loc>
     <lastmod>2025-11-03T13:27:03.094Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dormesia.fr/ressources/quiz</loc>
+    <loc>https://dormesia.com/ressources/quiz</loc>
     <lastmod>2025-11-03T13:27:03.094Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dormesia.fr/ressources/calculateur</loc>
+    <loc>https://dormesia.com/ressources/calculateur</loc>
     <lastmod>2025-11-03T13:27:03.094Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dormesia.fr/ressources/faq</loc>
+    <loc>https://dormesia.com/ressources/faq</loc>
     <lastmod>2025-11-03T13:27:03.094Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dormesia.fr/formations</loc>
+    <loc>https://dormesia.com/formations</loc>
     <lastmod>2025-11-03T13:27:03.094Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dormesia.fr/a-propos</loc>
+    <loc>https://dormesia.com/a-propos</loc>
     <lastmod>2025-11-03T13:27:03.094Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://dormesia.fr/contact</loc>
+    <loc>https://dormesia.com/contact</loc>
     <lastmod>2025-11-03T13:27:03.094Z</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>

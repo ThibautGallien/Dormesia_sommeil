@@ -2,7 +2,7 @@
 import fs from 'fs';
 import path from 'path';
 
-const DOMAIN = 'https://dormesia.fr'; // Changez par votre domaine
+const DOMAIN = 'https://dormesia.com'; // Changez par votre domaine
 const OUTPUT_PATH = path.join(process.cwd(), 'public', 'sitemap.xml');
 
 interface Page {
